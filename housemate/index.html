@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src="java/main.js"></script>
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<style type="text/css">
+	.lb{
+		float: left;
+	}
+
+</style>
+
+	<title>House Booking System</title>
+</head>
+<body>
+	<div id="DHead">
+		<a href="#"><img src="pics/components/logo.jpg" id="logo"></a>
+	<div id="menu"></div>
+	</div>
+
+	<!-- Here I start the body section -->
+
+	<form action="php/home.php" method="post" id="logg">
+
+		Email: <input name="email" placeholder="Enter Email" type="text" required="true" class="txt"></br>
+		Password:<input name="pass" placeholder="Enter password" required="true" type="password" class="txt"></br>
+		</br></br>
+		<input type="submit" value=" " class="sub"></br>
+		<input type="button" value="signup..." onclick="hide('logg');unhide('links');">
+		</form>
+
+	<div id="links" class="con">
+		<img src="pics/components/login.JPG" class="con" onclick="unhide('logg');hide('links');"></br>
+		<a href="#sign"><img src="pics/components/signup.JPG" class="con"></br></a>
+	</div>
+
+	<div id="leftp" class="content">
+		<h1 id="headt" onclick="hide('logg');">Welcome to the Online House booking system</h1>
+		<hr size="6px" color="#ffcc66">
+		<!-- the slider container will be a place holder for slider pics-->
+		<div id="slider">
+	<marquee scrolldelay="160">
+			<img src="pics/houses/greens.png" class="slide">
+			<img src="pics/houses/Nyeriview.png" class="slide">
+			<img src="pics/houses/plusplus.png" class="slide">
+	</marquee>
+		</div>
+		<div id="newU">
+		<a name="sign"> New to online Hostel booking? </br>Sign up below to:</a>
+		</br></br><u><h2>1. find a hostel</h2></u>
+		<form id="Tsign" action="php/tenantsign.php" method="post">
+			<div><label class="lb">Name:</label> <input name="name" type="text" placeholder="Enter Name" required="true" class="txt" id="nm" onkeyup="strip1('nm');"><span>*</span><br/></div>
+			<div>
+			<label class="lb">Email:</label> <input name="email" required="true" placeholder="Enter Email..." type="text" class="txt" id="em" onkeyup="VerifyE('em','warning');strip3('em');">
+			<span id="warning"></span>
+			<span>*</span></br></div>
+			<div>
+			<label class="lb">Phone Number:</label> <input name="phn" required="true" placeholder="Phone e.g. 2547********" type="text" class="txt" id="pnum" onkeyup="strip2('pnum');"><span>*</span></br></div>
+			<div>
+			<label class="lb">Id Number: </label><input name="idnum" type="text" placeholder="Enter ID Number" required="true" class="txt" id="idn" onkeyup="strip2('idn');"><span>*</span></br></div>
+			<div>
+			<label class="lb">Password:</label><input name="pass" type="password" placeholder="Enter Password" required="true" class="txt" id="psw" onkeyup="checker('psw','psw1','pwarn');"><span>*</span></br></div>
+			<div>
+			<label class="lb">Repeat Password:</label><input name="pass1" placeholder="Confirm Password" required="true" type="password" required="true" class="txt" id="psw1" onkeyup="checker('psw','psw1','pwarn');"><span>*</span></br></br>
+			<div id="pwarn"></div></div>
+			<div>
+			<input type="submit" value="sign-up.." class="subm"> <div id="pwarn"></div></div>
+		</form>
+</br></br>
+		<u><h2>2. manage my Hostel(s) online</h2></u>
+		<form id="Tsign" action="php/landlordsign.php" method="post">
+		<div>
+			Name: <input name="name" type="text" placeholder="Enter Name" required="true" class="txt"><span>*</span></br></div>
+			<div>
+			Email: <input name="email" type="text" class="txt" id="im" required="true" placeholder="Enter Email..." onkeyup="VerifyE('im','warning2');strip3('im');">
+			<div id="warning2"></div>
+			<span>*</span></br></div>
+			<div>
+			Phone Number: <input name="phn" type="text" class="txt" required="true" placeholder="Phone e.g. 2547********" id="pnum1" onkeyup="strip2('pnum1');"><span>*</span></br></div>
+			<div>
+			Password:<input name="pass" placeholder="Enter Password" required="true" type="password" class="txt" id="psw0" onkeyup="checker('psw0','psw2','pwarn1');"><span>*</span>
+			</br></div>
+			<div>
+			Repeat Password:<input name="pass1" placeholder="Confirm Password" required="true" type="password" class="txt" id="psw2" onkeyup="checker('psw0','psw2','pwarn1');">
+			<span>*</span></br></br></div>
+			<input type="submit" value="Request account.." class="subm"><div id="pwarn1"></div>
+
+		</form>
+		</div>
+		
+	</div>
+	</br>
+
+
+<hr size="6px" color="#ffcc66">
+	<div id="footer">
+		<a href="http://www.facebook.com"><img src="pics/components/facebook1.png" class="FLink"></a>
+		<a href="http://www.twitter.com"><img src="pics/components/twitter1.png" class="FLink"></a>
+		<a href="http://www.youtube.com"><img src="pics/components/youtube1.png" class="FLink"></a>
+		<a href="http://www.linkedin.com"><img src="pics/components/linkedin.png" class="FLink"></a>
+		<a href="http://www.plus.google.com"><img src="pics/components/googleplus1.png" class="FLink"></a>
+			<!--<p> &copy; The Group 7&trade;</p>-->
+	</div>
+
+</body>
+</html>

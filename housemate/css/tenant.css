@@ -1,0 +1,67 @@
+/*this page contains specifics for tenant pages*/
+div.content{
+	position: relative;
+	width:60%;margin:200px 0px 0px 40px;
+	padding-top: 250px;
+
+}
+div#Dhead{
+	height:190px;left:1px;
+	position:fixed;
+}
+h3{
+	color: white;font-size:1.5em;
+	text-align:center; font-family:cursive,times; text-shadow:5px 5px 5px #fc6;
+}
+div#reserver{
+	width:60%; 
+	border:3px #fc6 solid;border-radius:10px;
+	background-image:url("../pics/components/back2.JPG");
+	float:left;left:21.5%; position:relative;
+}
+div#newsfeed{
+
+	width:20%;height:700px; 
+	border:3px #fc6 solid;border-radius:10px;background-image:url("../pics/components/back2.JPG");
+	float:left; position:fixed; top:210px;left:1px;
+}
+div#mini{
+	margin-left:50px; text-align:center;
+}
+div#mini>a>img{
+	height:100px;width:100px;
+	border-radius:5px;
+}
+div.main1{
+	display:block;
+}
+div#search{
+	display:none;
+}
+div.main1>a>img{
+	height:200px;width:250px;
+	border-radius:5px;
+}
+div#mini>a>img{
+	border:2px solid #fc6;
+}
+div#mini>a:hover>img{
+	border:5px solid #3c0;
+}
+div#mini > a {
+	text-decoration:none;font-family:cursive,times;font-size:18px;color:#fc6;text-shadow:1px 1px 3px #fc9; 
+	}
+div#mini > a:hover {
+	text-decoration:none;font-family:cursive,times;font-size:20px;color:#f30;text-shadow:1px 1px 3px #fff; 
+	}
+a.common{
+	text-decoration:none;font-family:cursive,times;font-size:18px;color:#fc6;text-shadow:1px 1px 3px #fc9;
+	 border:2px solid #fc6;
+	 border-radius: 5%; /*background-color: #6495ED;*/
+}
+a.common:hover {
+	text-decoration:none;font-family:cursive,times;font-size:20px;color:#f30;text-shadow:1px 1px 3px #fff; 
+	border:5px solid #3c0;
+	border-radius: 5%;
+	background-color: white;
+	}

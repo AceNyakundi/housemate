@@ -1,0 +1,89 @@
+/*Here lies a formal layout to the appearence of my site*/
+body{
+	background:url("../pics/components/backpic.jpg");
+	text-align: center;
+	
+}
+div{
+	display: inline-block;
+}
+.subm{
+	font-size: 18px; margin: 10px;
+	font-family: cursive,impact;
+	border-radius:5px;
+}
+div#DHead{
+	height:200px;border:#fc6 solid 3px; border-radius:10px;width:95%;z-index:1;margin-left:2%;
+	background:url("../pics/components/backpic.jpg");
+}
+div#DHead > div{
+	 
+}
+div#footer{
+	clear: both;margin-left:37%;margin-top:10px;width: 50%;display: inline-block;
+	color: #fc6;font-size:18px;font-family:cursive,times,impact;font-weight:bold;
+	padding-left: 10px;
+}
+div#footer >a:hover>img{
+	height:100px;width:100;
+}
+div#slider{
+	height: 550px;width:650px;float:right;margin-right:15%;border-radius: 20px;
+	background:url("../pics/components/fine.png");
+}
+#newU{
+	height: 550px;width:650px;float:right;margin-right:15%;border-radius: 20px;
+	color:white;font-weight:bold;font-size:20px;text-align: center;
+}
+
+img.slide{
+	height: 550px;width:650px;
+}
+#Tsign{
+	border: #fc6 solid 3px;border-radius: 5px;padding:10px 10px 5px 3px;
+}
+input.txt {
+		float: right;margin-right:90px;font-size:14px;padding: 1px;font-family:impact,times,cursive;
+	}
+	h2{
+		font-size:24px;text-shadow:5px 5px 5px #fc6;
+	}
+span{
+	color:#f00;float:right;left:10px
+}
+div#links{
+	position: fixed;margin-top:300px;float:left;height:300px;border:#fc6 solid 3px; border-radius:10px;
+	left:5px;background:url("../pics/components/backpic.jpg");border-left:none;
+}
+ img.con{
+	width:202px;margin:20px 0px 0px 0px;
+}
+form#logg{
+	display: none;left:0px;top:350px;
+	float:left;position:fixed;background:url("../pics/components/backpic.jpg");
+	border:#fc6 solid 3px; margin:5px 0px 0px 5px;border-radius:10px;
+	width:300px;height:200px;color:white;font-weight:bold;font-size:20px;padding:20px 20px 7px 20px;
+}
+form#logg > input.txt{
+	float: right;margin-right:7px;font-size:14px;padding: 1px;font-family:impact,times,cursive;
+}
+label.lbl{
+	color:white;font-weight:bold;font-size:20px;margin:20px 0px 0px 20px;
+}
+input.sub{
+	background:url("../pics/components/login.JPG");margin-left:20px;
+	height:80px; width:240px;border-radius:10px;
+}
+div.content{
+	width:80%;margin-left:10%;border:#fc6 solid 3px; border-radius:10px;height:1500px;
+	background:url("../pics/components/back2.JPG"); background-repeat:no-repeat;background-size:100% 100%;
+}
+div#leftp{margin-top:20px; }
+h1#headt{
+	color: white;
+	text-align:center; font-family:cursive,times; text-shadow:5px 5px 5px #fc6;
+}
+
+img#logo{
+	 width:65%;margin-left:17%;
+}

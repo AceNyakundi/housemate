@@ -1,0 +1,17 @@
+div#newU{
+	margin-top: 40px;
+}
+form.frm{
+	border: 3px #fc6 solid;padding:15px;border-radius:10px;
+}
+.subm{
+	font-size: 18px; margin: 10px;
+	font-family: cursive,impact;
+	border-radius:5px;
+}
+#fhead{
+	font-size:18px;font-style:underline;font-family:cursive,impact; color:#fc6;
+}
+div#mini >img{
+	height:300; width: 250; border :3px #fc6 solid;border-radius: 20px;margin:10px 0px 30px 0px;
+}
